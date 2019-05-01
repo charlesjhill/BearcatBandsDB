@@ -22,6 +22,7 @@ namespace BearcatBands.Models
         [Display(Name = "First Name")]
         public string FirstMidName { get; set; }
 
+        [Required]
         [DataType(DataType.Date)]
         [Display(Name = "Enrollment Date")]
         public DateTime EnrollmentDate { get; set; }
