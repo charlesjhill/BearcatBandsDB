@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace BearcatBands.Models
 {
@@ -15,5 +12,6 @@ namespace BearcatBands.Models
         public int Credits { get; set; }
 
         public ICollection<Enrollment> Enrollments { get; set; }
+        public ICollection<EnsembleAssignment> EnsembleAssignments { get; set; }
     }
 }
