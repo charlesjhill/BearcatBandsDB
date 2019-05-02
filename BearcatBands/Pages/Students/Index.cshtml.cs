@@ -74,7 +74,7 @@ namespace BearcatBands.Pages.Students
                     break;
             }
 
-            int pageSize = 3;
+            int pageSize = 10;
             Students = await PaginatedList<Student>.CreateAsync(
                 studentIQ.AsNoTracking(), pageIndex ?? 1, pageSize);
         }
